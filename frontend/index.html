@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Better Cooking</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1>Get Better Cooking</h1>
+
+      <section class="jumbotron">
+        <h3>Add New Recipe</h3>
+        <form action="#">
+          <div class="form-group">
+            <label for="recipeName">Recipe Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="recipeName"
+              placeholder="What do you call your dish?"
+            />
+          </div>
+          <div class="form-group">
+            <label for="recipeTextarea">Enter Recipe</label>
+            <textarea
+              class="form-control"
+              id="recipeTextarea"
+              rows="6"
+              placeholder="How did you make this dish?"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="recipeRating">Rate Your Dish</label>
+            <select class="form-control" id="recipeRating">
+              <option>Terrible</option>
+              <option selected>Okay</option>
+              <option>Perfect</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="recipeComments">Enter Comments</label>
+            <textarea
+              class="form-control"
+              id="recipecomments"
+              rows="5"
+              placeholder="What did you like about your dish? What did you dislike? What would you do differently next time? Would you add or remove any specific ingredients? Write anything you'd like to remember for next time!"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </section>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- TODO -->
+<!-- add user homepage
+    populate with recipies submitted, can edit/delete recipes, click into older recipes to view/edit/delete  -->
+
+<!-- SITE DETAILS -->
+<!-- Site where you can post recipies that you have used, and leave yourself a rating and what you can do to make it better the next time you cook. -->
+<!-- ability to post recipies and rating and correction of errors for next time -->
+
+<!-- add bootstrap for styling -->
+
+<!-- NICE TO HAVE -->
+<!-- add date to recipe form -->
+<!-- add picture to recipe form -->
+<!-- ability to edit recipe -->
