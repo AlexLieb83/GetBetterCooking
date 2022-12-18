@@ -1,1 +1,26 @@
-<h1>Dashboard</h1>
+<h6>Dashboard</h6>
+<h3>Welcome {{name}}</h3>
+<p>Here are your recipes:</p>
+{{#if recipes}}
+  <table class="striped">
+    <thead>
+      <tr>
+        <th>Dish Name</th>
+        <th>Date</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each recipes}}
+        <tr>
+          <td><a href="/recipes/{{_id}}"></a>{{recipe}}</td>
+          <td>{{createdAt}}</td>
+          <td><span class="dashed-status">{{status}}</span></td>
+          <td></td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{else}}
+  <p>You have not created any recipes yet</p>
+{{/if}}
